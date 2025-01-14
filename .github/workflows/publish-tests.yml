@@ -116,6 +116,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: /tmp/editor-preview
+          name: github-pages
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        with:
+          artifact-name: github-pages
